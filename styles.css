@@ -65,8 +65,9 @@ h2 em {
    ========================================= */
 
 .site-header {
-    position: absolute;
-    z-index: 10;
+    position: fixed;
+    z-index: 1000;
+    background-color: var(--bg);
     top: 0;
     left: 0;
     width: 100%;
@@ -135,8 +136,8 @@ h2 em {
 .hero-content {
     position: relative;
     z-index: 2;
-    width: min(850px, 90%);
-    margin: 110px 0 100px clamp(24px, 10vw, 155px);
+    width: min(850px, calc(90% - 50px));
+    margin: 100px;
 }
 
 .hero-logo {
@@ -363,6 +364,84 @@ footer {
     opacity: 0.8;
 }
 
+/* Service cards: icon left, content right */
+.experience-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.experience {
+    display: grid;
+    grid-template-columns: 110px minmax(0, 1fr);
+    align-items: start;
+    gap: 26px;
+    min-height: auto;
+    padding: 36px 30px;
+}
+
+.experience-icon {
+    display: block;
+    width: 100%;
+    height: 110px;
+    margin: auto;
+    object-fit: contain;
+}
+
+.experience-content {
+    min-width: 0;
+}
+
+.experience-content .number {
+    display: block;
+    margin-bottom: 12px;
+}
+
+.experience-content h3 {
+    margin: 0 0 14px;
+    font-size: clamp(28px, 2.6vw, 36px);
+    line-height: 1.1;
+}
+
+.experience-content p {
+    margin: 0;
+    color: var(--muted);
+    font-size: 13px;
+    line-height: 1.9;
+}
+
+@media (max-width: 1050px) {
+    .experience-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 750px) {
+    .experience {
+        grid-template-columns: 80px minmax(0, 1fr);
+        gap: 20px;
+        padding: 28px 22px;
+    }
+
+    .experience-icon {
+        height: 80px;
+    }
+}
+
+@media (max-width: 380px) {
+    .experience {
+        grid-template-columns: 60px minmax(0, 1fr);
+        gap: 14px;
+        padding: 24px 16px;
+    }
+
+    .experience-icon {
+        height: 60px;
+    }
+
+    .experience-content h3 {
+        font-size: 26px;
+    }
+}
+
 /* Mobile */
 
 @media (max-width: 750px) {
@@ -414,7 +493,7 @@ footer a {
 
     .hero-logo {
         width: min(85vw, 360px);
-        margin-bottom: 24px;
+        margin: 30px auto;
     }
 
     h1 {
@@ -456,11 +535,7 @@ footer a {
         min-height: auto;
         padding: 30px;
     }
-
-    .experience-icon {
-        margin: 15px 0;
-    }
-
+    
     footer {
         flex-wrap: wrap;
         padding: 30px 25px;

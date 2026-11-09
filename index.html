@@ -6,11 +6,19 @@
         <meta name="theme-color" content="#0b0c0b" />
         <meta
             name="description"
-            content="ALITA Aviation — a new perspective on private helicopter experiences. Coming soon."
+            content="ALITA Aviation — helicopter charters for race days, Formula 1, weddings, private journeys and country escapes. Coming soon."
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="64x64"
+            href="assets/images/logos/favicon.png"
         />
         <title>ALITA Aviation | Coming Soon</title>
         <link rel="stylesheet" href="styles.css" />
+        <script src="script.js" defer></script>
     </head>
+
     <body>
         <header class="site-header">
             <a class="wordmark" href="#top" aria-label="ALITA Aviation home">
@@ -21,8 +29,11 @@
                 />
             </a>
 
-            <a class="header-link" href="#discover"> Discover <span aria-hidden="true">↗</span> </a>
+            <a class="header-link" href="#discover">
+                Discover <span aria-hidden="true">▶</span>
+            </a>
         </header>
+
         <main id="top">
             <section class="hero" aria-labelledby="hero-title">
                 <div class="hero-content">
@@ -31,81 +42,239 @@
                         alt="ALITA Aviation"
                         class="hero-logo"
                     />
+
                     <p class="eyebrow">A new perspective awaits</p>
-                    <h1 id="hero-title">The sky is <em>only</em> the beginning.</h1>
+
+                    <h1 id="hero-title">
+                        The sky is <em>only</em> the beginning.
+                    </h1>
+
                     <p class="hero-subtitle">
-                        Private aviation. Extraordinary moments. An experience unlike any other.
+                        Race days. Remarkable arrivals. Private helicopter
+                        journeys arranged around you.
                     </p>
-                    <p class="coming">ALITA AVIATION <span>—</span> COMING SOON</p>
+
+                    <p class="coming">
+                        ALITA AVIATION <span>—</span> COMING SOON
+                    </p>
+
                     <div class="hero-actions">
-                        <a class="button" href="#discover"
-                            >Discover what awaits <span aria-hidden="true">↘</span></a
-                        >
+                        <a class="button" href="#discover">
+                            Discover what awaits
+                            <span aria-hidden="true">▶</span>
+                        </a>
                     </div>
                 </div>
-                <a class="scroll-note" href="#discover"
-                    >SCROLL TO EXPLORE <span aria-hidden="true">↓</span></a
-                >
+
+                <a class="scroll-note" href="#discover">
+                    SCROLL TO EXPLORE
+                    <span aria-hidden="true">▼</span>
+                </a>
             </section>
-            <section class="intro section" id="discover">
+
+            <section
+                class="intro section"
+                id="discover"
+                aria-labelledby="intro-title"
+            >
                 <p class="eyebrow">Introducing ALITA Aviation</p>
-                <h2>More than a journey.<br /><em>A lasting impression.</em></h2>
+
+                <h2 id="intro-title">
+                    More than a journey.<br />
+                    <em>A lasting impression.</em>
+                </h2>
+
                 <p>
-                    We’re preparing to bring you an elevated way to experience flight — thoughtfully
-                    curated helicopter journeys, unforgettable occasions, and the freedom to
-                    discover the world from above.
+                    From a day at Royal Ascot or Silverstone to a wedding arrival
+                    or lunch at a country hotel, we’re preparing a more personal
+                    way to travel. Thoughtfully arranged helicopter journeys,
+                    memorable occasions and the freedom to see things
+                    differently.
                 </p>
             </section>
-            <section class="experiences section" aria-labelledby="experiences-title">
+
+            <section
+                class="experiences section"
+                aria-labelledby="experiences-title"
+            >
                 <div class="section-heading">
                     <p class="eyebrow">What to expect</p>
-                    <h2 id="experiences-title">The experience<br /><em>starts here.</em></h2>
+
+                    <h2 id="experiences-title">
+                        Your occasion.<br />
+                        <em>A different perspective.</em>
+                    </h2>
                 </div>
                 <div class="experience-grid">
                     <article class="experience">
-                        <span class="number">01 /</span>
-                        <div class="experience-icon" aria-hidden="true">✧</div>
-                        <h3>Private Charters</h3>
-                        <p>
-                            Travel with intention. Bespoke helicopter journeys shaped around your
-                            destination and occasion.
-                        </p>
+                        <img
+                            src="assets/images/icons/icon-horse-racing.png"
+                            alt=""
+                            class="experience-icon"
+                            loading="lazy"
+                        />
+                        <div class="experience-content">
+                            <span class="number">01 /</span>
+                            <h3>Race Day Charters</h3>
+                            <p>
+                                Royal Ascot, Cheltenham, the Grand National and beyond.
+                                Plan a helicopter journey around your day at the races,
+                                with departure and return arrangements tailored to you.
+                            </p>
+                        </div>
                     </article>
+
                     <article class="experience">
-                        <span class="number">02 /</span>
-                        <div class="experience-icon" aria-hidden="true">◇</div>
-                        <h3>Wedding Charters</h3>
-                        <p>
-                            Make an extraordinary entrance and create a moment to remember long
-                            after the day.
-                        </p>
+                        <img
+                            src="assets/images/icons/icon-f1.png"
+                            alt=""
+                            class="experience-icon"
+                            loading="lazy"
+                        />
+                        <div class="experience-content">
+                            <span class="number">02 /</span>
+                            <h3>Formula 1 &amp; Motorsport</h3>
+                            <p>
+                                From the British Grand Prix at Silverstone to the spectacle
+                                of Goodwood. Make the journey part of your motorsport
+                                experience with a bespoke helicopter charter.
+                            </p>
+                        </div>
                     </article>
+
                     <article class="experience">
-                        <span class="number">03 /</span>
-                        <div class="experience-icon" aria-hidden="true">↗</div>
-                        <h3>Flying Experiences</h3>
-                        <p>
-                            Discover the thrill of helicopter flight, with private experiences and
-                            lessons planned for launch.
-                        </p>
+                        <img
+                            src="assets/images/icons/icon-wedding.png"
+                            alt=""
+                            class="experience-icon"
+                            loading="lazy"
+                        />
+                        <div class="experience-content">
+                            <span class="number">03 /</span>
+                            <h3>Wedding Charters</h3>
+                            <p>
+                                An extraordinary arrival for an unforgettable day.
+                                Explore helicopter journeys for you and your partner,
+                                with timings and venue arrangements considered around
+                                your celebration.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="experience">
+                        <img
+                            src="assets/images/icons/icon-rental.png"
+                            alt=""
+                            class="experience-icon"
+                            loading="lazy"
+                        />
+                        <div class="experience-content">
+                            <span class="number">04 /</span>
+                            <h3>Aircraft Hire &amp; Rental</h3>
+                            <p>
+                                Aircraft options shaped around your requirements.
+                                Speak with us about availability, hire arrangements
+                                and eligibility as we prepare our aircraft offering
+                                for launch.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="experience">
+                        <img
+                            src="assets/images/icons/icon-excursion.png"
+                            alt=""
+                            class="experience-icon"
+                            loading="lazy"
+                        />
+                        <div class="experience-content">
+                            <span class="number">05 /</span>
+                            <h3>Private Charters</h3>
+                            <p>
+                                Business travel, airport connections and personal journeys.
+                                Bespoke helicopter charters arranged around your
+                                destination, schedule and occasion.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="experience">
+                        <img
+                            src="assets/images/icons/icon-experiences.png"
+                            alt=""
+                            class="experience-icon"
+                            loading="lazy"
+                        />
+                        <div class="experience-content">
+                            <span class="number">06 /</span>
+                            <h3>Experiences &amp; Escapes</h3>
+                            <p>
+                                A country hotel lunch, afternoon tea or an overnight retreat.
+                                Discover planned packages combining helicopter travel
+                                with exceptional places to dine, unwind and celebrate.
+                            </p>
+                        </div>
                     </article>
                 </div>
             </section>
-            <section class="closing section" id="contact">
-                <p class="eyebrow">Something extraordinary is approaching</p>
-                <h2>Your next chapter<br /><em>takes flight soon.</em></h2>
+
+            <section
+                class="intro section"
+                id="events"
+                aria-labelledby="events-title"
+            >
+                <p class="eyebrow">The social &amp; sporting calendar</p>
+
+                <h2 id="events-title">
+                    An occasion<br />
+                    <em>worth arriving for.</em>
+                </h2>
+
                 <p>
-                    Our full website is on its way. Follow our launch as we prepare to welcome you
-                    aboard.
+                    Royal Ascot and Cheltenham. Silverstone and Goodwood.
+                    Wimbledon, Henley Royal Regatta and Cowes Week. Whether
+                    you’re planning a sporting occasion, a festival weekend or
+                    an event of your own, tell us where you’d like to go.
                 </p>
+            </section>
+
+            <section
+                class="closing section"
+                id="contact"
+                aria-labelledby="contact-title"
+            >
+                <p class="eyebrow">Something extraordinary is approaching</p>
+
+                <h2 id="contact-title">
+                    Your next chapter<br />
+                    <em>takes flight soon.</em>
+                </h2>
+
+                <p>
+                    Our full website is on its way. To discuss a future journey,
+                    share your occasion, preferred date, departure location and
+                    number of passengers.
+                </p>
+
+                <!-- Replace the placeholder email address before publishing. -->
                 <a
                     class="button button-outline"
-                    href="mailto:schwenzrt@gmail.com?subject=ALITA%20Aviation%20Enquiry"
-                    >Enquire about ALITA <span aria-hidden="true">↗</span></a
+                    href="mailto:alitaaviation@gmail.com?subject=ALITA%20Aviation%20Enquiry"
                 >
-                <p class="small-note">Email address is a placeholder — update before publishing.</p>
+                    Enquire about ALITA
+                    <span aria-hidden="true">▶</span>
+                </a>
+
+                <p class="small-note">
+                    Services and packages are being prepared for launch.
+                    Flights are subject to availability, weather, landing
+                    permissions and operational approval. Event tickets,
+                    hospitality and accommodation are included only where
+                    expressly stated.
+                </p>
             </section>
         </main>
+
         <footer>
             <a href="#top" class="footer-brand" aria-label="ALITA Aviation home">
                 <img
@@ -115,9 +284,13 @@
                     loading="lazy"
                 />
             </a>
-            <p>© <span id="year">2026</span> ALITA Aviation. All rights reserved.</p>
-            <a href="#top">Back to top ↑</a>
+
+            <p>
+                © <span id="year">2026</span> ALITA Aviation.
+                All rights reserved.
+            </p>
+
+            <a href="#top">Back to top ▲</a>
         </footer>
-        <script src="script.js"></script>
     </body>
 </html>
